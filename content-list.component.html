@@ -1,0 +1,21 @@
+<app-create-content (contentAdded)="addContent($event)"></app-create-content>
+
+<div style="margin: 20px">
+ Search Bar:
+  <input [(ngModel)]="inputTitle" />
+  <button (click)="searchTitle()">Search</button>
+  <div>
+    <div *ngIf="available" class="available">
+      {{ titleSearchMessage }}
+    </div>
+    <div *ngIf="!available" class="not-available">
+      {{ titleSearchMessage }}
+    </div>
+  </div>
+</div>
+
+<app-content-card *ngFor="let item of contents" [content]="item">
+</app-content-card>
+
+<app-content-card *ngFor="let item of contents | contentTypeFilter:'Batsman'" [content]="item">
+</app-content-card>

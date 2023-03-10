@@ -1,0 +1,19 @@
+.message-container {
+  background-color: greenyellow;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  font-weight: 800;
+  text-align: center;
+}
+
+button{
+  background-color: blanchedalmond;
+  font-weight: 500;
+  font-size: large;
+}
+
+.message{
+  margin: 5px;
+}

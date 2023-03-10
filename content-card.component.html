@@ -1,0 +1,12 @@
+<div class="content-card">
+    <h2>{{content.title}}</h2>
+    <p>{{content.description}}</p>
+    <p>Creator: {{content.creator}}</p>
+    <p appHoverAffect *ngIf="content.type">Type: {{content.type}}</p>
+    <div *ngIf="content.tags">
+        Tags: 
+            <p appHoverAffect [tag]="true" *ngFor="let tag of content.tags, let i = index">
+                {{i+1}}.{{tag}}
+            </p>
+    </div>
+  </div>

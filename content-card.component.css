@@ -1,0 +1,13 @@
+.content-card{
+    border: 1px black solid;
+    display: block;
+    width: 420px;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+}
+.image{
+    height: 300px;
+    width: 300px;
+}

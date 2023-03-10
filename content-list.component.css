@@ -1,0 +1,17 @@
+.content-card{
+    border: 1px black solid;
+}
+.content-card-keeper{
+    border: 1px black solid;
+    color: green;
+}
+.content-card-batsman{
+    border: 1px black solid;
+    color: red;
+}
+.available{
+    color: green;
+}
+.not-available{
+    color: red;
+}
