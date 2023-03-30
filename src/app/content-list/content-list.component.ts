@@ -16,49 +16,49 @@ export class ContentListComponent {
     const content1: Content = {
       id: 1,
       title: 'India',
-      description: 'highest number of runs',
-      creator: 'RCB',
+      description: 'Run Machine Kohli',
+      creator: 'VK',
       type: 'Batsman',
     };
     const content2: Content = {
       id: 2,
       title: 'Bangladesh',
-      description: 'Good at field',
-      creator: 'CSK',
-      type: 'Keeper',
-      tags: ['Thala',"Mahi"]
+      description: 'He is a one of the best batsman for bangladesh',
+      creator: 'BT',
+      type: 'Batsman',
+      tags: ['Das',"Liton"]
     };
     const content3: Content = {
       id: 3,
       title: 'England',
-      description: 'highest number of wickets',
-      creator: 'MI',
+      description: 'highest number of run for england',
+      creator: 'Kevin Peterson',
       type: 'Batsman',
     };
     const content4: Content = {
       id: 4,
-      title: 'America',
-      description: 'Thoughest fielding line up',
-      creator: 'PKKS',
+      title: 'West Indies',
+      description: 'GayleStrome coming',
+      creator: 'Gayle',
       type: 'Batsman',
     };
     const content5: Content = {
       id: 5,
       title: 'Australia',
-      description: 'Highest centuries',
-      creator: 'CSK',
+      description: 'TikToker',
+      creator: 'Warner',
     };
     const content6: Content = {
       id: 6,
       title: 'Africa',
-      description: 'Yougest players',
-      creator: 'RR',
+      description: 'MR 360',
+      creator: 'ABD',
     };
     const content7: Content = {
       id: 7,
       title: 'Pakistan',
-      description: 'Toughest Balling line up',
-      creator: 'MI',
+      description: 'Duck Specialist',
+      creator: 'Afridi',
     };
     this.contents.push(content1);
     this.contents.push(content2);
@@ -70,7 +70,7 @@ export class ContentListComponent {
   }
 
   searchTitle() {
-    
+
     this.available = false;
     this.titleSearchMessage = 'Title you searched for is unavailable';
     this.contents.forEach((element) => {
@@ -78,7 +78,7 @@ export class ContentListComponent {
       if (element.title === this.inputTitle) {
         this.available = true;
         this.titleSearchMessage = 'Title you searched is available';
-      } 
+      }
     });
   }
 
