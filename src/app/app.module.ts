@@ -20,7 +20,6 @@ import { ModifyContentComponentComponent } from './modify-content-component/modi
     HoverAffectDirective,
     CreateContentComponent,
     AppMessagesComponent,
-    ModifyContentComponentComponent
   ],
   imports: [
     BrowserModule,
