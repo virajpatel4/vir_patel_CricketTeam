@@ -86,3 +86,4 @@ export class ContentListComponent {
     this.contents.push(content);
   }
 }
+
